@@ -14,7 +14,7 @@ pipeline {
             }
             steps {
                 script {
-                    app = docker.build("damonbrinkley/train-schedule")
+                    app = docker.build("damonbrinkley5/train-schedule")
                     app.inside {
                         sh 'echo $(curl localhost:8080)'
                     }
